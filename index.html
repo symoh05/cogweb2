@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Cogmers, Church of God Seventh Day. Join us for worship, fellowship, and spiritual growth.">
+    <title>Cogmers - Church of God Seventh Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+</head>
+<body>
+
+<header>
+    <nav>
+        <!-- Hamburger Menu -->
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Off-Screen Menu (Initially hidden) -->
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="groups.html">Groups</a></li>
+                <li><a href="churchgallery.html">Church Gallery </a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="hero">
+    <h1>Welcome to :<br><span>Church of God Seventh Day-</span><br>Cogmers</h1>   
+    <a href="services.html" class="cta-button">Join Us for Worship</a>
+    <img class="img-aa" src="img/aa.jfif">
+</section>
+
+
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>The Church of God Seventh Day is committed to spreading the word of God, living according to His commandments,<br> and fostering a community of believers who seek to glorify God in all aspects of their lives. <br>We uphold the Seventh-Day Sabbath and value deep, meaningful fellowship.
+       
+        
+    </p>
+</section>
+
+<section class="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <ul>
+        <li><strong>Weekly Sabbath Service</strong> - Every Saturday at 9:00 AM - 5:00 PM</li>
+        <li><strong>MidWeek fellowship Every Wednesday</strong> - Every Tuesday at 3:00 PM</li>
+        <li><strong>Community Outreach</strong> - Every November in a specified date</li>
+    </ul>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+           
+        <div class="footer-section">
+            <h3>CHURCH OF GOD SEVENTH DAY</h3>
+            <p>We are Messianic Synagogue, believing Yahshuah is the Messiah (John 4:22-26).</p>
+            <ul class="contact-info">
+                <li><span class="icon">📞</span> +254-700-000-000</li>
+                <li><span class="icon">📧</span> info@kiambucogmers.or.ke</li>
+                <li><span class="icon">🌐</span> COGMERs Messianic Congregation</li>
+                <li><span class="icon">📍</span> Kiambu Kenya.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 www.cogmerskiambu.org. All rights reserved.</p>
+        <p>Developed & maintained by <a href="#"> Kiambu COG Media Team</a>.</p>
+    </div>
+    </footer>
+</footer>
+
+<script>
+    // Select the hamburger menu and off-screen menu
+    const hamMenu = document.querySelector('.ham-menu');
+    const offScreenMenu = document.querySelector('.off-screen-menu');
+
+    // Toggle the menu when clicking on the hamburger menu
+    hamMenu.addEventListener('click', (event) => {
+        event.stopPropagation(); // Prevent the event from bubbling up
+        hamMenu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+    });
+
+    // Close the menu if you click outside the menu
+    document.addEventListener('click', (event) => {
+        if (!hamMenu.contains(event.target) && !offScreenMenu.contains(event.target)) {
+            hamMenu.classList.remove('active');
+            offScreenMenu.classList.remove('active');
+        }
+    });
+</script>
+
+</body>
+  </html>
