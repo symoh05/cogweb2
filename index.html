@@ -126,6 +126,18 @@
 </footer>
 
 <script>
+    let currentIndex = 0;
+
+function showNextSlide() {
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  currentIndex = (currentIndex + 1) % slides.length;
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Auto-slide every 3 seconds
+setInterval(showNextSlide, 
+            });
     // Select the hamburger menu and off-screen menu
     const hamMenu = document.querySelector('.ham-menu');
     const offScreenMenu = document.querySelector('.off-screen-menu');
@@ -144,18 +156,6 @@
             offScreenMenu.classList.remove('active');
             
     });
-    let currentIndex = 0;
-
-function showNextSlide() {
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  currentIndex = (currentIndex + 1) % slides.length;
-  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-// Auto-slide every 3 seconds
-setInterval(showNextSlide, 
-            });
 </script>
 
 </body>
