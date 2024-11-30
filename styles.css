@@ -392,3 +392,27 @@ h4 {
     background: black;
     z-index: 2;
 }
+/* Slider Section */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 25%;
+  height:300px;
+  display: flex;
+  border-radius: 8px;
+}
