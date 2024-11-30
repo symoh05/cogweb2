@@ -114,12 +114,18 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #4CAF50;
+    background-color: orange;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
 }
+
+form button:hover {
+    background-color: purple;
+
+}
+
 
 /* Basic Reset */
 * {
@@ -387,31 +393,3 @@ h4 {
     background: black;
     z-index: 2;
 }
-
-#form-message {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-#form-message.success {
-    color: green;
-}
-
-#form-message.error {
-    color: red;
-}
-
-input[type=submit] {
-    background-color: orange;
-    padding: 15px 0;
-    font-size: 18px;
-    color: white;
-    border-bottom: none;
-    margin-top: 30px;
-    cursor: pointer;
-}
-input[type=submit]:hover {
-    background: purple;
-
-
